@@ -1,1 +1,29 @@
+ Smart FloodGuard - System Architecture
+ 5-Layer Architecture
 
+Layer 1: Sensing Layer
+- HC-SR04 Ultrasonic Sensor - Distance/water height
+- Water Level Sensor - Water presence
+- Rain Sensor - Rainfall intensity
+
+Layer 2: Processing Layer
+- ESP32 Microcontroller - Main brain
+
+Layer 3: Power Layer (KEY INNOVATION)
+- Buzzer + LED + Siren for local alerts
+
+Layer 4: Communication Layer
+- WiFi for data to cloud
+-LoRa module
+
+ Layer 5: Cloud & Application Layer
+- Firebase - Real-time database
+- Blynk Cloud - Dashboard
+- Real-time Dashboard with Flood Map
+- 3-Level Alert System:
+  L1 (10cm): Buzzer + App Notification
+  L2 (25cm): SMS + Siren + Telegram to 100 residents
+  L3 (40cm): NDRF Call + GPS location + Rescue mode
+- User Mobile App + Municipal Admin Panel
+
+Data Flow: Sensors → ESP32 → Communication → Cloud → Alerts to Users & Government
