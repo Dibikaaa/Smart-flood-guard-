@@ -1,0 +1,9 @@
+Smart Flood Guard: IoT-Based Early Flood Detection and Alert System
+
+Urban flooding causes severe damage due to late detection and lack of localized alerts. Existing drainage systems lack real-time monitoring, leading to overflow and waterlogging without warning.
+
+Smart Flood Guard is an IoT-based early warning system designed for streets, homes, and low-lying areas. It uses water level, water flow, and rain sensors connected to an ESP32 microcontroller to continuously monitor rising water levels. Sensor data is sent to the cloud for analysis and flood risk prediction.
+
+When water crosses a threshold, the system triggers multi-level alerts through a buzzer, LCD display, mobile app notification, and SMS to residents and authorities. It also detects drain blockage by comparing flow and level data. The system handles missing or faulty sensor data and switches to a safe alert mode when confidence is low.
+
+A dashboard displays real-time water level, flood risk status, and location-wise alerts. Developed with simulation and optional hardware prototype using solar power support, it is low-cost and scalable. It aims to reduce flood damage through early detection, timely alerts, and data-driven monitoring for municipalities and communities.
